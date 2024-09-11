@@ -1,0 +1,109 @@
+# Cloud Infrastructure Architecture Document for AWS Deployment
+
+## Objective:
+You are tasked with creating a detailed **Cloud Infrastructure Architecture document** for an application being deployed on AWS cloud. The document must cover deployment, governance, and security controls, ensuring alignment with AWS’s **Six-Pillar Architecture** principles: 
+1. Operational Excellence
+2. Security
+3. Reliability
+4. Performance Efficiency
+5. Cost Optimization
+6. Sustainability
+
+The document is intended for a technical audience, including cloud engineers, application architects, DevOps teams, and other stakeholders. Provide sufficient detail in each section to ensure all involved parties can understand the architecture and its rationale.
+
+---
+## 1) **Solution Summary**
+
+- **Purpose**: Why is this solution needed? What are the primary goals and key benefits of the architecture?  
+  [User Input: What are the primary goals and expected benefits of this architecture?]
+  
+- **Architecture Overview**: Provide a high-level summary of the proposed architecture. Explain how it aligns with AWS principles, covering key AWS services and components involved.  
+  [User Input: What are we proposing?]
+  
+- **Key Functionality/Capability**: Describe the core functionalities enabled by this architecture. Focus on how the architecture supports the application’s technical requirements.
+
+---
+## 2) **Core Functions and Infrastructure**
+
+- **Main Functionalities**: What are the primary functionalities of the application?  
+  [User Input: What are the main functionalities of the application?]
+
+- **Infrastructure Support**: What AWS infrastructure components are required to support the core functions?  
+  [User Input: What connectivity is needed? Do we need F5 or ELB? Performance & DR: What is LVT requirement? Specify in RPO terms.]
+
+---
+## 3) **Assumptions, Constraints, and Recommendations**
+
+- **Assumptions**: What assumptions were made during the design of this architecture?  
+  [User Input: Any specific security considerations?]
+
+- **Constraints**: Identify any constraints or limitations that could impact the solution’s scalability, performance, or security.
+
+- **Recommendations**: Provide recommendations for enhancing scalability, performance, and security in this architecture.
+
+---
+## 4) **Solution Requirements**
+
+- **4.1 User Access**: Specify IAM roles and policies needed for user access, emphasizing security measures to protect data and resources.  
+  [User Input: High level of things to consider for Access & Security: What specific IAM roles and security measures are needed?]
+
+- **4.2 Interfaces**: List and describe systems, services, or APIs that will interface with this application. Explain the purpose of these integrations.
+
+- **4.3 Security**: Detail the key security requirements for the solution, with a focus on user access controls, data encryption, and VPC configurations.  
+  [User Input: Any specific security considerations?]
+
+- **4.4 Networking**: Describe the network architecture, including required VPCs, subnets, and any connectivity needs (e.g., F5, ELB, VPN).  
+  [User Input: Networking: What connectivity is needed? Do we need F5 or ELB? Is DNS required?]
+
+- **4.5 Software Components**: List all necessary software components and databases for the solution.
+
+- **4.6 Performance**: Define the performance expectations and describe the monitoring strategies that will ensure the solution remains performant under load.  
+  [User Input: Performance & DR: What is LVT requirement? Specify in RPO terms.]
+
+- **4.7 Support**: Describe the support required for both deployment and ongoing operations.
+
+- **4.8 Storage & Database**: Specify the storage and database needs, including storage type, IOPS requirements, and data retention strategies.
+
+- **4.9 Disaster Recovery (DR)**: Define the DR strategy, including Recovery Point Objective (RPO) and Recovery Time Objective (RTO).  
+  [User Input: What is the DR strategy? Define RPO and RTO.]
+
+- **4.10 Compliance & Licensing**: List any relevant compliance requirements (e.g., GDPR, HIPAA) and licenses that must be maintained.  
+  [User Input: What compliance standards must be met, and what licenses are required?]
+
+- **4.11 Database**: List any relevant database needed.   
+
+---
+## 5) **Proposed Solution**
+
+- **5.1 Current Architecture**: Briefly describe the current architecture, if applicable, and how it relates to the proposed design.
+
+- **5.2 Proposed Architecture Details**: 
+    - **Comprehensive Description**: Provide a detailed description of the proposed architecture, explaining how it meets the application’s needs while aligning with AWS's six-pillar principles.  
+      [User Input: Explain how the architecture meets the needs of the application while adhering to AWS's six-pillar principles.]
+      
+    - **Component Overview**: List and explain each component involved in the architecture (e.g., IAM, VPC, EC2, RDS). Describe how each component interacts with others, ensuring the architecture’s cohesion.  
+      [User Input: Describe each component involved in the architecture and any relevant AWS services like IAM. Explain how each component interacts.]
+
+    - **High Availability**: Describe how high availability is achieved and why it’s essential. Note whether this is built-in via AWS services (e.g., EKS, ELB, S3) or configured separately.  
+      [User Input: High Availability: How is high availability ensured for each component, and why is it important for this solution?]
+
+    - **Security**: Explain the security mechanisms embedded within the architecture (e.g., IAM, VPC, encryption). Highlight how these meet compliance and data protection requirements.  
+      [User Input: Detail how security is integrated into the architecture, including IAM roles, VPC configurations, and data protection mechanisms.]
+
+    - **Scalability**: Describe how the architecture is designed to scale based on demand. Include specific scaling mechanisms, like Auto Scaling groups or Elastic Load Balancing.  
+      [User Input: Scalability: How will the architecture handle scaling, and what mechanisms are in place to manage increased load?]
+
+    - **Performance Monitoring**: Explain how performance will be monitored and optimized over time.
+
+    - **Deployment Strategy**: Provide a detailed deployment strategy, including CI/CD practices, automation scripts, and configurations.  
+      [User Input: How will the deployment be automated, and what CI/CD practices will be used?]
+
+    - **Task List**: Outline a task list required to deploy the architecture, with descriptions of each task.
+
+    - **Migration Strategy**: Describe the migration approach for any existing data, databases, or servers.  
+      [User Input: Does it need any migration of data or databases or servers? What is the approach?]
+
+---
+## 6) **Environment Considerations**
+
+- Describe the differences between production and non-production environments. Include considerations for cost optimization, security, and configuration differences.

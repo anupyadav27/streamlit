@@ -1,0 +1,11 @@
+What are the primary goals and expected benefits of this architecture?
+What are we proposing?
+High level of things to consider for Access & Security: What specific IAM roles and security measures are needed?
+Networking: What connectivity is needed? Do we need F5 or ELB? Performance & DR: What is LVT requirement? Specify in RPO terms.
+Compliance & Licensing: What compliance standards must be met, and what licenses are required?
+Deployment Strategy: How will the deployment be automated, and what CI/CD practices will be used?
+High Availability: How is high availability ensured for each component, and why is it important for this solution?
+Scalability: How will the architecture handle scaling, and what mechanisms are in place to manage increased load?
+Any specific security considerations?
+Does it need any migration of data or database or servers? What is the approach?
+Is DNS required?
