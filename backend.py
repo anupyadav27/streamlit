@@ -9,7 +9,7 @@ import logging
 logging.basicConfig(level=logging.INFO)
 
 # Initialize OpenAI API Key
-openai.api_key = os.getenv('REMOVED')
+openai_api_key = os.getenv('OPENAI_API_KEY')
 
 def generate_section(prompt_template, user_input, section_name, context):
     """
